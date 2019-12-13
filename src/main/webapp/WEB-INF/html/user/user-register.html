@@ -1,0 +1,78 @@
+ <!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+<!-- Loding font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700"
+	rel="stylesheet">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" type="text/css" href="../resources/user/css/style.css">
+<link rel="stylesheet" href="../resources/assets/css/reviseindexljr.css">
+<link rel="stylesheet" href="../resources/assets/css/background.css">
+<title>UserRegist</title>
+</head>
+<body>
+	<div class="container" id="login">
+		<div class="row justify-content-center">
+			<div class="login">
+				<h1>注册</h1>
+				<form>
+				    <!-- 用户名称 -->
+					<div class="form-group">
+						<input type="text" class="form-control" 
+						    id="user-name" placeholder="用户名">
+					</div>
+					<!-- 用户账号 -->
+					<div class="form-group">
+						<input type="text" class="form-control"
+							id="user-account" placeholder="用户账号">
+					</div>
+					<!-- 用户密码 -->
+					<div class="form-group">
+						<input type="password" class="form-control"
+							id="user-password" placeholder="用户密码">
+					</div>
+					<!-- 用户职称 -->
+					<div class="form-group">
+							<select name="city" class="form-control" id="user-remark" placeholder="用户职称" >
+									<option value="普通职员">普通成员</option>
+									<option value="管理员">管理员</option>
+									<option value="指导老师">指导老师</option>
+							</select>	
+					</div>
+					<!-- 用户性别 -->
+					<div class="form-group">
+							<select name="city" class="form-control" id="user-gender" placeholder="用户性别" >
+									<option value="男">男</option>
+									<option value="女">女</option>
+							</select>	
+					</div>
+					<br>
+					<button type="button" class="btn btn-lg btn-block btn-success" id="register">注册</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- start: JavaScript-->
+	<script src="../resources/assets/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../resources/js/user-register.js"
+		charset="utf-8"></script>
+	<!--[if !IE]>-->
+	<!--<![endif]-->
+	<script src="../resources/assets/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

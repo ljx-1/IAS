@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.studio.IAS.dao.ImageDao">
+    <!-- 创建图片 -->
+    <insert id="insertImage" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+      INSERT INTO
+      tb_image (name,user_id,category,create_time,addr)
+      VALUES
+      (#{name},#{userId},#{category},#{createTime},#{addr})
+   </insert>
+   <!-- 查询所有图片 -->
+   <select id="queryAllImage" resultType="com.studio.IAS.entity.Image">
+        SELECT
+        *
+        FROM
+        tb_image
+    </select>
+    <!-- 根据用户id查询图片 -->
+    <select id="getImagesByUserId" resultType="com.studio.IAS.entity.Image" parameterType="com.studio.IAS.entity.User">
+        SELECT
+        *
+        FROM
+        tb_image
+        where user_id=#{id}
+    </select>
+    <!-- 根据id删除图片 -->
+    <delete id="deleteImageById" parameterType="Integer">
+        DELETE
+        FROM tb_image
+        WHERE
+        id=#{id}
+    </delete>
+</mapper>

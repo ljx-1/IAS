@@ -1,0 +1,34 @@
+.main .row .button{
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    background: red; 
+    position:absolute; 
+    left:368px; bottom:34px;
+    height: 21px;
+    width: 41px;
+    font-size: 0.5em;
+    overflow: hidden;
+}
+/* index.html里面删除的按钮 */
+
+.login .form-group .form-control{
+    background: rgb(238, 234, 234);
+    color: rgb(94, 91, 91);
+    border-radius:30px; 
+    height: 52px;
+}
+.login .form-group label{
+    /* padding: 30px; */
+    margin: 10px 40px 8px;
+     color: honeydew;
+    font-size: 20px;
+}
+.mian1 {
+	display: none;
+}
+/*第一个必须显示出来 不然第一个内容要点击才能出来，*/
+.mian1:nth-child(1) {
+	display: block;
+}
+
